@@ -1,0 +1,27 @@
+<h3>Home Page</h3>
+
+<div ng-controller="homeCtrl as todoList">
+
+    <input ng-model="todoList.taskname" />
+    <button ng-click="todoList.addTodo()">Add Task</button>
+    <button ng-click="todoList.removeTask()">Remove Task</button>
+
+    <li ng-repeat="tsk in todoList.taskArr">
+        <label>
+            <input type="checkbox" ng-model="tsk.done" />
+            <span class="done-{{tsk.done}}">{{tsk.task}}</span>
+        </label>
+    </li>
+
+    <button ng-click="todoList.testFactory()">Test Factory</button>
+    <button ng-click="todoList.testService()">Test Service</button>
+
+
+    <!-- Bootstrap UI Alert -->
+    <script type="text/ng-template" id="alert.html">
+        <div class="alert" role="alert">
+        <div ng-transclude></div>
+        </div>
+    </script>
+    <uib-alert type="{{alert.type}}" close="closeAlert()" ng-hide="alert == null">{{alert.msg}}</uib-alert>
+</div>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="testApp">
+    <head>
+        <title>Angular Test</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/css/main.css">
+    </head>
+    <body>
+
+        <!-- Menu bar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/home">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/home">Home</a></li>
+                    <li><a href="#/other">Other</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- views from routes -->
+        <div ng-view=""></div>
+
+        <!-- Angular core file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <!-- Angular route library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+        <!-- scripts at the bottom -->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        <!-- Bootstrap UI Dependencies -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.min.js"></script>
+        <!-- Bootstrap UI -->
+        <script src="public/js/bootstrap-ui/ui-bootstrap-tpls-1.2.4.min.js"></script>
+        <!-- Angular scripts -->
+        <script src="public/js/main.js"></script>
+        <script src="public/js/routes.js"></script>
+        <script src="public/js/factory.js"></script>
+        <script src="public/js/service.js"></script>
+        <script src="public/js/controllers/homeController.js"></script>
+
+    </body>
+</html>
+
